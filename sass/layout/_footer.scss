@@ -1,0 +1,122 @@
+.footer-contacts {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-content {
+    background-color: var(--backgraund-banner-color);
+    padding: 60px 0;
+
+}
+.title-logo {
+    color: var(--logo-color);
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-logo {
+    font-family: raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-footer-color);
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.adress-link {
+    color: var(--text-footer-color);
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-item__mail,
+.footer-item__number {
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--contacts-text-color);
+    font-style: normal;
+    transition: color var(--transition-func);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-item__number:hover,
+.footer-item__number:focus {
+    color: var(--accent-color);
+
+}
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(26/14);
+    letter-spacing: 0.03em;
+    color: var(--text-footer-color);
+    margin-bottom: 20px;
+}
+
+.footer-adress {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.social-sets {
+    background-color: var(--backgraund-banner-color);
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-sets__links {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition-func);
+
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.social-set__icon {
+    fill: var(--main-background-color);
+    transition: fill var(--transition-func);
+
+    &:hover,
+    &:focus {
+            fill: var(--main-background-color);
+        }
+}
