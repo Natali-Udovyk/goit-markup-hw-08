@@ -402,6 +402,14 @@ body {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer-adress {
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-adress {
     display: flex;

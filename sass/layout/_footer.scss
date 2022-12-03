@@ -127,12 +127,14 @@
 .footer-adress {
     display: flex;
     align-items: center;
-    // justify-content: center;
     flex-direction: column;
 
 
     @include tablet {
-
+        flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
     }
     
     @include desktop {
@@ -146,7 +148,7 @@
 
 .form-email {
     display: block;
-    
+
     @include desktop {
         display: flex;
     }
