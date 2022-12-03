@@ -3,24 +3,50 @@
     align-items: center;
 }
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 auto;
-    padding: 0 auto;
+    display: none;
+   
+
+
+    @include tablet {
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 75px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+            
+    }
+    @include desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 0 auto;
+            padding: 0 auto;
+    }
 }
 .logo {
     margin-right: 93px;
     font-family: raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--logo-text-color);
-    line-height: calc(31/26);
+    line-height: calc(28/24);
     letter-spacing: 0.03em;
     text-decoration: none;
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    @include tablet {
+    font-size: 24px;
+    line-height: calc(28/24);
+    margin-right: 87px;
+    }
+    @include desktop {
+    margin-right: 93px;
+    font-size: 26px;
+    }
 }
 
 .logo__header {
@@ -28,8 +54,16 @@
     display: flex;
 }
 .nav {
-    display: flex;
-    margin: 0;
+    display: none;
+
+    @include tablet {
+        display: flex;
+            margin: 0;
+    }
+    @include desktop  {
+        display: flex;
+            margin: 0;
+    }
 }
 
 .nav .nav__item:not(:last-child) {
@@ -42,6 +76,7 @@
     font-weight: 500;
     line-height: 1.14;
     font-size: 14px;
+    letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -113,11 +148,16 @@
     font-size: 14px;
     text-decoration: none;
     color: var(--contacts-text-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: fill var(--transition-func);
     display: flex;
     align-items: center;
+
+       
+
+        @include desktop {
+            padding-top: 32px;
+                padding-bottom: 32px;
+        }
     
         &:hover,
         &:focus {
@@ -127,7 +167,11 @@
 
 .contact__mail,
 .contact__number:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+
+    @include desktop {
+        margin-right: 50px;
+    }
 }
 
 .contact__number:hover .contact__icon-phone,

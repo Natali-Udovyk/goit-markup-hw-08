@@ -1,6 +1,10 @@
 .footer-contacts {
-    padding: 0;
-    margin: 0;
+    margin-bottom: 60px;
+
+    @include desktop {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -19,18 +23,40 @@
     line-height: calc(31/26);
     letter-spacing: 0.03em;
     text-decoration: none;
+
+    @include tablet {
+
+    }
+    
+    @include desktop {
+            font-size: 26px;
+            line-height: calc(31/26);
+        }
 }
 
 .footer-logo {
     font-family: raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: var(--text-footer-color);
-    line-height: calc(31/26);
+    line-height: calc(28/24);
     letter-spacing: 0.03em;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+
+
+    @include tablet {
+
+    }
+    @include desktop {
+    font-size: 26px;
+    line-height: calc(31/26);
+    margin-left: 0;
+    display: block;
+    }
+
 }
 
 .adress-link {
@@ -57,6 +83,12 @@
     color: var(--contacts-text-color);
     font-style: normal;
     transition: color var(--transition-func);
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+    display: block;
+    }
 
     &:hover,
     &:focus {
@@ -77,14 +109,48 @@
     letter-spacing: 0.03em;
     color: var(--text-footer-color);
     margin-bottom: 20px;
-}
+    display: flex;
+    justify-content: center;
 
+    @include desktop {
+        display: block;
+    }
+}
+.social-link{
+    margin-bottom: 60px;
+    
+        @include desktop {
+            padding: 0;
+            margin: 0;
+        }
+}
 .footer-adress {
     display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+
+
+    @include tablet {
+
+    }
+    
+    @include desktop {
+        display: flex;
     align-items: baseline;
     justify-content: space-between;
+    flex-direction: row;
+    // flex-wrap: nowrap ;
+        }
 }
 
+.form-email {
+    display: block;
+    
+    @include desktop {
+        display: flex;
+    }
+}
 .social-sets {
     background-color: var(--backgraund-banner-color);
     display: inline-flex;
