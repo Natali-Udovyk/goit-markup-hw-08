@@ -6,6 +6,15 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
 }
+
 .section {
+    padding: 60px 0;   
+
+    @media screen and (min-width: 768px) {
+    padding: 60px 0; }
+
+    @media screen and (min-width: 1200px) {
     padding: 94px 0;
+        }
+
 }

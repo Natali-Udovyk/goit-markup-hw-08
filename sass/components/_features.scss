@@ -42,8 +42,15 @@
 }
 
 .section-skills {
-    padding-bottom: 94px;
-    padding-top: 0;
+    display: none;
+    
+    @include desktop {
+        display: block;
+        padding-bottom: 94px;
+        padding-top: 0;
+    }
+
+
 }
 
 .list-skills {
@@ -66,16 +73,56 @@
 .benefits {
     display: flex;
     gap: 30px;
+    flex-direction: column;
+    
+
+    @include tablet {
+        flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+    //    flex-wrap: wrap;
+        // max-width: 354px;
+        // width: calc(100% / 2);
+        // margin: 0;
+
+       
+    }
+    @include desktop {
+        // flex-direction: row;
+        // display: flex;
+        // gap: 30px;
+    }
+    
+}
+
+.benefits li {
+    flex: 47%;
+
+    @include desktop {
+            // flex-direction: row;
+            // display: flex;
+            // gap: 30px;
+            flex: 20%;
+        }
+
 }
 
 .benefits__item {
-    width: 270px;
+    
     height: 120px;
     background-color: var(--color-list-items);
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    // @include tablet {
+    //     width: 354px;
+    // }
+   
+
 }
 
 .benefits__icon {

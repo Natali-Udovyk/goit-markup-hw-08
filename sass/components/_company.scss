@@ -1,22 +1,43 @@
 .company {
     list-style: none;
     background-color: var(--main-background-color);
-    display: inline-flex;
     margin: 0;
     padding: 0;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include tablet {
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+    }
+
+    @include desktop {
+    display: inline-flex;
+    @include desktop {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
 }
 
 .company__logo {
     display: inline-flex;
     background-color: var(--main-background-color);
+    
 
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+  
+
+    
 }
 
 .company__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px Solid #AFB1B8;
     border-radius: 4px;
@@ -24,6 +45,14 @@
     align-items: center;
     justify-content: center;
     transition: border var(--transition-func);
+
+    @include tablet {
+        width: 226px;
+    }
+    
+    @include desktop {
+        width: 170px;
+    }
 
     &:hover,
     &:focus {

@@ -3,7 +3,7 @@
 
 @import "./base/reset";
 @import "./base/base";
-
+@import "./utils/mixinns";
 @import "./layout/header";
 @import "./layout/footer";
 
@@ -15,3 +15,4 @@
 @import "./components/portfolio";
 @import "./components/company";
 @import "./components/modal";
+ 

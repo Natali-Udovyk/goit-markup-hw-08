@@ -54,7 +54,17 @@ body {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .main-nav {
@@ -195,6 +205,7 @@ body {
 }
 
 .header-page {
+  background-color: var(--main-background-color);
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -326,10 +337,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .banner {
@@ -424,8 +450,14 @@ body {
 }
 
 .section-skills {
-  padding-bottom: 94px;
-  padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-skills {
+    display: block;
+    padding-bottom: 94px;
+    padding-top: 0;
+  }
 }
 
 .list-skills {
@@ -449,10 +481,26 @@ body {
 .benefits {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.benefits li {
+  flex: 47%;
+}
+@media screen and (min-width: 1200px) {
+  .benefits li {
+    flex: 20%;
+  }
 }
 
 .benefits__item {
-  width: 270px;
   height: 120px;
   background-color: var(--color-list-items);
   margin-bottom: 30px;
@@ -467,14 +515,30 @@ body {
 
 .headline,
 .title-company {
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .headline,
+.title-company {
+    font-size: 28px;
+    line-height: 1.1785714286;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headline,
+.title-company {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
 }
 
 .list-team__box {
@@ -507,16 +571,38 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .list-team {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-team {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
 
 .list-team__item {
-  width: 270px;
+  width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background: var(--main-background-color);
   border-radius: 0px 0px 4px 4px;
 }
-.list-team .list-team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .list-team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-team__item {
+    width: 270px;
+  }
+  .list-team .list-team__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .social-set {
@@ -677,21 +763,39 @@ body {
 .company {
   list-style: none;
   background-color: var(--main-background-color);
-  display: inline-flex;
   margin: 0;
   padding: 0;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .company {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company {
+    display: inline-flex;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .company:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .company__logo {
   display: inline-flex;
   background-color: var(--main-background-color);
 }
-.company__logo:not(:last-child) {
-  margin-right: 30px;
-}
 
 .company__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px Solid #AFB1B8;
   border-radius: 4px;
@@ -699,6 +803,16 @@ body {
   align-items: center;
   justify-content: center;
   transition: border var(--transition-func);
+}
+@media screen and (min-width: 768px) {
+  .company__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company__link {
+    width: 170px;
+  }
 }
 .company__link:hover, .company__link:focus {
   border: solid 1px var(--accent-color);
