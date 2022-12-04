@@ -1425,6 +1425,10 @@ body {
   }
 }
 
+.form-email {
+  text-align: center;
+}
+
 .btn-send {
   background: var(--button-order-color);
   border-radius: 4px;
@@ -1440,7 +1444,6 @@ body {
   transition: background-color var(--transition-func);
   font-size: 16px;
   line-height: 1.875;
-  margin-left: 140px;
 }
 @media screen and (min-width: 1200px) {
   .btn-send {

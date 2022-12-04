@@ -317,7 +317,9 @@
         width: auto;
     }
 }
-
+.form-email {
+    text-align: center;
+}
 .btn-send {
     background: var(--button-order-color);
     border-radius: 4px;
@@ -334,7 +336,7 @@
     transition: background-color var(--transition-func);
     font-size: 16px;
     line-height: calc(30/16);
-    margin-left: 140px;
+    // margin-left: 140px;
     @include desktop {
         margin-left: 0;
         display: inline-block;
