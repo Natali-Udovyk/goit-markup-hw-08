@@ -605,12 +605,17 @@ body {
 .banner {
   background-color: var(--backgraund-banner-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .banner_main {
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -643,25 +648,29 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-1200-@2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
-  .banner_main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mainphotoheader.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
 
 .banner__title {
   color: var(--title-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .banner__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 
 .order-button {
@@ -878,14 +887,6 @@ body {
 @media screen and (min-width: 768px) {
   .list-team__item {
     flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .list-team__item {
-    width: 270px;
-  }
-  .list-team .list-team__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1127,17 +1128,23 @@ body {
 }
 
 .modal {
+  width: 450px;
+  height: 609px;
   padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--main-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgb(0, 0, 0), 0px1px 1px rgba(0, 0, 0, 0.14), 0p2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1160,19 +1167,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .btn-close {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 8px;
-    right: 8px;
-    background-color: transparent;
-    background: #FFFFFF;
-    width: 30px;
-    height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
   }
 }
 
@@ -1286,17 +1282,29 @@ body {
   justify-content: center;
   margin-top: 20px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 0.8571428571;
   letter-spacing: 0.03em;
   color: var(--contacts-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .modal__check {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
+}
 
 .text-user-check {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--contacts-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-user-check {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal__link {
@@ -1381,7 +1389,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1402,10 +1410,23 @@ body {
   transition: border-color var(--transition-func);
 }
 
+.form-email__send {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .form-email__send {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-email__send {
+    width: auto;
+  }
+}
+
 .btn-send {
   background: var(--button-order-color);
   border-radius: 4px;
-  width: 200px;
   height: 50px;
   border: none;
   color: var(--button-text-color);
@@ -1428,6 +1449,20 @@ body {
 }
 .btn-send:hover, .btn-send:focus {
   background-color: var(--accent-color);
+}
+
+.footer-submit {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-submit {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-submit {
+    width: auto;
+  }
 }
 
 .btn-send__icon {

@@ -1,12 +1,22 @@
 .banner {
     background-color: var(--backgraund-banner-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
+    // padding: 118px 60px;
+
+    @include tablet {
+    
+       
+    }
+
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 .banner_main {
-
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
   
@@ -49,12 +59,12 @@
         }
     }
 
-        @include desktop {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/mainphotoheader.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+    //     @include desktop {
+    //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/mainphotoheader.jpg");
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+    // }
 
 
 
@@ -66,13 +76,23 @@
 .banner__title {
     color: var(--title-text-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: calc(42/26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+
+    @include tablet {
+    width: 360px;
+    }
+
+    @include desktop {
+        width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+    }
 }
 
 .order-button {

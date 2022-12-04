@@ -89,12 +89,12 @@
         flex-basis: calc((100% - 30px)/2);
     }
    
-    @include desktop{
-        width: 270px;
-    .list-team &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
+    // @include desktop{
+    //     width: 270px;
+    // .list-team &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+    // }
    
 }
 .social-set {
