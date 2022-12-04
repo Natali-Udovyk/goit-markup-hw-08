@@ -91,10 +91,11 @@ body {
 @media screen and (min-width: 1200px) {
   .contact {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
     align-items: center;
     margin: 0 0 0 auto;
-    padding: 0 auto;
   }
 }
 
@@ -237,10 +238,6 @@ body {
   color: var(--accent-color);
 }
 
-.contact__mail,
-.contact__number:not(:last-child) {
-  margin-bottom: 10px;
-}
 @media screen and (min-width: 1200px) {
   .contact__mail,
 .contact__number:not(:last-child) {
@@ -711,7 +708,6 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 370px;
 }
 
 .list-skills li:not(:last-child) {

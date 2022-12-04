@@ -1,6 +1,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+    // width: 100%;
 }
 .contact {
     display: none;
@@ -19,10 +20,12 @@
     }
     @include desktop {
             display: flex;
-            justify-content: center;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0;
             align-items: center;
             margin: 0 0 0 auto;
-            padding: 0 auto;
+            
     }
 }
 .logo {
@@ -65,7 +68,6 @@
             margin: 0;
     }
 }
-
 .nav .nav__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -167,7 +169,7 @@
 
 .contact__mail,
 .contact__number:not(:last-child) {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     @include desktop {
         margin-right: 50px;
