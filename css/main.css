@@ -548,7 +548,7 @@ body {
 
 .contact-menu__number {
   font-weight: 500;
-  color: var(--contacts-text-color);
+  color: var(--accent-color);
   line-height: 1.1764705882;
   font-size: 34px;
   letter-spacing: 0.02em;
@@ -566,7 +566,7 @@ body {
 
 .social-menu__link {
   text-decoration: none;
-  color: var(--contacts-text-color);
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
@@ -610,14 +610,46 @@ body {
 }
 
 .banner_main {
-  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mainphotoheader.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-480-1x.jpg");
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-480-@2x.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-768-1x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-768-@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-1200-1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header-1200-@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner_main {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mainphotoheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .banner__title {
@@ -627,7 +659,6 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -735,7 +766,7 @@ body {
   }
 }
 .benefits li {
-  flex: 47%;
+  flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 1200px) {
   .benefits li {
@@ -846,7 +877,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .list-team__item {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {

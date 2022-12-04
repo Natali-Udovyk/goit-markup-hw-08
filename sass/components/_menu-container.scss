@@ -60,7 +60,7 @@
 
 .contact-menu__number {
     font-weight: 500;
-    color: var(--contacts-text-color);
+    color: var(--accent-color);
     line-height: calc(40/34);
     font-size: 34px;
     letter-spacing: 0.02em;
@@ -79,7 +79,7 @@
 }
 .social-menu__link {
     text-decoration: none;
-    color: var(--contacts-text-color);
+    color: var(--accent-color);
     font-weight: 500;
     font-size: 18px;
     line-height: calc(22/18);

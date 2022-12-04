@@ -98,8 +98,8 @@
 }
 
 .benefits li {
-    flex: 47%;
-
+    // flex: 47%;
+flex-basis: calc((100% - 30px)/2);
     @include desktop {
             // flex-direction: row;
             // display: flex;
