@@ -255,7 +255,6 @@ body {
 }
 
 .header-page {
-  position: fixed;
   width: 100%;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ECECEC;
