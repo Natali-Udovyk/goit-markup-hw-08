@@ -1129,7 +1129,7 @@ body {
 }
 
 .modal {
-  width: 290px;
+  max-width: 100%;
   height: auto;
   padding: 40px;
   position: absolute;

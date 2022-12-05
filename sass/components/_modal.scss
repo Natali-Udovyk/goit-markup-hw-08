@@ -15,8 +15,9 @@
         }
 }
 
-.modal {
-        width: 290px;
+.modal {    
+        max-width: 100%;
+        // width: 290px;
         height: auto;
         padding: 40px;
         position: absolute;
