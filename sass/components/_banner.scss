@@ -1,7 +1,6 @@
 .banner {
     background-color: var(--backgraund-banner-color);
     text-align: center;
-
     padding-top: 118px;
     padding-bottom: 118px;
     // padding: 118px 60px;
@@ -14,12 +13,12 @@
     @include desktop {
         padding-top: 200px;
         padding-bottom: 200px;
+        max-width: 1600px;
     }
 }
 .banner_main {
     margin-left: auto;
     margin-right: auto;
-  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

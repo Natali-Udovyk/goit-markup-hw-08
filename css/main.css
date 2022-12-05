@@ -619,6 +619,7 @@ body {
   .banner {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   }
 }
 
@@ -705,6 +706,14 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .slogan {
@@ -921,12 +930,19 @@ body {
   color: var(--color-list-items);
 }
 
-.social-set__icon {
-  fill: var(--main-background-color);
+.social-set__icons {
+  fill: #afb1b8;
   transition: fill var(--transition-func);
 }
-.list-team .social-set__icon:not(:last-child) {
+.list-team .social-set__icons:not(:last-child) {
   margin-right: 30px;
+}
+
+.social-set__icons {
+  transition: fill var(--transition-func);
+}
+.social-set__icons:hover, .social-set__icons:focus {
+  fill: var(--main-background-color);
 }
 
 .filter {

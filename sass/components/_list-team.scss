@@ -127,11 +127,19 @@
 
 
 
-.social-set__icon {
-    fill: var(--main-background-color);
+.social-set__icons {
+    fill: #afb1b8;
     transition: fill var(--transition-func);
 
     .list-team &:not(:last-child) {
             margin-right: 30px;
+        }
+}
+.social-set__icons {
+    transition: fill var(--transition-func);
+    
+        &:hover,
+        &:focus {
+            fill: var(--main-background-color);
         }
 }
