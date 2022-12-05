@@ -930,6 +930,10 @@ body {
   color: var(--color-list-items);
 }
 
+.social-set__link:hover .social-set__icons, .social-set__link:focus .social-set__icons {
+  fill: var(--main-background-color);
+}
+
 .social-set__icons {
   fill: #afb1b8;
   transition: fill var(--transition-func);

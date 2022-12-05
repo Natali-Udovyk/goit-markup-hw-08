@@ -124,7 +124,12 @@
         }
 }
 
-
+.social-set__link {
+    &:hover .social-set__icons,
+    &:focus .social-set__icons{
+        fill: var(--main-background-color);
+    }
+}
 
 
 .social-set__icons {
