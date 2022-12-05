@@ -1173,7 +1173,7 @@ body {
 
 .btn-close {
   position: absolute;
-  display: flex;
+  display: flexbox;
   align-items: center;
   justify-content: center;
   top: 8px;
@@ -1194,7 +1194,7 @@ body {
 
 .btn-close__icon {
   fill: var(--logo-text-color);
-  z-index: 1000;
+  display: block;
 }
 
 .btn-close:hover .btn-close__icon,

@@ -52,7 +52,7 @@
 
 .btn-close {
     position: absolute;
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: center;
     top: 8px;
@@ -73,7 +73,8 @@
 
 .btn-close__icon {
     fill: var(--logo-text-color);
-    z-index: 1000;
+    display: block;
+    // position: fixed;
 }
 
 .btn-close:hover .btn-close__icon,
