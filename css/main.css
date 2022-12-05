@@ -255,6 +255,8 @@ body {
 }
 
 .header-page {
+  position: fixed;
+  width: 100%;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ECECEC;
 }
@@ -1192,12 +1194,20 @@ body {
   justify-content: center;
   top: 8px;
   right: 8px;
+  border-radius: 50%;
   background-color: transparent;
   background: #FFFFFF;
   width: 30px;
   height: 30px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .btn-close {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .btn-close {

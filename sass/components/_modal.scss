@@ -57,12 +57,19 @@
     justify-content: center;
     top: 8px;
     right: 8px;
+    border-radius: 50%;
     background-color: transparent;
     background: #FFFFFF;
     width: 30px;
     height: 30px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
     cursor: pointer;
+
+    @include tablet {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+    }
 
     @include desktop {      
         border: 1px solid rgba(0, 0, 0, 0.1);
