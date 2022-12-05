@@ -1184,7 +1184,6 @@ body {
   height: 30px;
   border: none;
   cursor: pointer;
-  z-index: 1000;
 }
 @media screen and (min-width: 1200px) {
   .btn-close {
@@ -1195,6 +1194,7 @@ body {
 
 .btn-close__icon {
   fill: var(--logo-text-color);
+  z-index: 1000;
 }
 
 .btn-close:hover .btn-close__icon,

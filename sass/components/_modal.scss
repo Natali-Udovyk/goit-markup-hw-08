@@ -63,7 +63,6 @@
     height: 30px;
     border: none;
     cursor: pointer;
-    z-index: 1000;
 
     @include desktop {      
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -74,6 +73,7 @@
 
 .btn-close__icon {
     fill: var(--logo-text-color);
+    z-index: 1000;
 }
 
 .btn-close:hover .btn-close__icon,
