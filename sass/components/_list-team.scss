@@ -128,7 +128,7 @@
 
 
 .social-set__icon {
-    fill: #afb1b8;
+    fill: var(--main-background-color);
     transition: fill var(--transition-func);
 
     .list-team &:not(:last-child) {

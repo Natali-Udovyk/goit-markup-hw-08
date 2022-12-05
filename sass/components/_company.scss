@@ -1,23 +1,29 @@
 .company {
+    display: flex;
+    flex-basis: calc((100% - 30px)/2);
     list-style: none;
     background-color: var(--main-background-color);
     margin: 0;
     padding: 0;
     gap: 30px;
-    display: flex;
+    // align-items: center;
+
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+
     @include tablet {
             gap: 30px;
-            display: flex;
+            
             flex-wrap: wrap;
             align-items: center;
-
+            flex-basis: calc((100% - 2 * 30px) /3);
     }
 
     @include desktop {
-    display: inline-flex;
+    flex-basis: calc((100% - 5 * 30px) /6);
+    justify-content: space-between;
+    flex-direction: row;
     @include desktop {
             &:not(:last-child) {
                 margin-right: 30px;
@@ -27,17 +33,24 @@
 }
 
 .company__logo {
+    justify-content: center;
     display: inline-flex;
     background-color: var(--main-background-color);
-    
+    flex-basis: calc((100% - 30px)/ 2);
 
-  
-
-    
+    @include tablet {
+        flex-basis: calc((100% - 2 * 30px) /3);
+    }
+     
+    @include desktop {
+        flex-basis: calc((100% - 5 * 30px) /6);
+    }
 }
 
 .company__link {
-    width: 210px;
+    width: 100%;
+    // width: 210px;
+    // flex-basis: calc((100% - 30px)/ 1);
     height: 92px;
     border: 1px Solid #AFB1B8;
     border-radius: 4px;
@@ -47,11 +60,11 @@
     transition: border var(--transition-func);
 
     @include tablet {
-        width: 226px;
+        width: 100%;
     }
     
     @include desktop {
-        width: 170px;
+        width: 100%;
     }
 
     &:hover,
