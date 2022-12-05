@@ -81,9 +81,9 @@
     text-decoration: none;
     color: var(--accent-color);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: calc(22/18);
-
+    letter-spacing: 0.02em;
         &:hover,
         &:focus {
             color: var(--accent-color);

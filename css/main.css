@@ -568,8 +568,9 @@ body {
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2222222222;
+  letter-spacing: 0.02em;
 }
 .social-menu__link:hover, .social-menu__link:focus {
   color: var(--accent-color);
